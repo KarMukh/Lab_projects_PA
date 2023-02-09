@@ -11,8 +11,6 @@ def hello_world():
 def hi():
     return "<p>Hi!</p>"
 
-
-
 @app.route("/")
 def ho():
     return "<p>Hol!</p>"
