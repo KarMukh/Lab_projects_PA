@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Python Runner</title>
+{% endblock %}
+
+{% block body %}
+    <h1>Result</h1>
+    <pre>{{ result }}</pre>
+
+    <h1>Bugs & Errors</h1>
+    <pre>{{ error }}</pre>
+
+    <a href="/">Back</a>
+{% endblock %}

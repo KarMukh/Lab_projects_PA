@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block head %}
+<title>Python Code Runner</title>
+{% endblock %}
+
+{% block body %}
+    <form action="/execute" method="post">
+        <label>
+            <textarea name="code"></textarea>
+        </label>
+        <input type="submit" value="Run">
+    </form>
+{% endblock %}
+
