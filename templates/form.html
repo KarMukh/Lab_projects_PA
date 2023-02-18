@@ -6,12 +6,13 @@
 {% block body %}
 <div class="container">
     <h2>Type your code here and run it</h2>
-    <form action="/execute" method="post">
+    <form action="/execute" method="post" onsubmit="return getContent()">
         <label>
-            <textarea name="code"></textarea>
+            <textarea id="textAreaId" name="code"></textarea>
         </label>
         <input type="submit" value="Run">
     </form>
+   <!-- <div id="textBox"  contenteditable="true" style="border: 1px solid black; width:200px; height 300px"></div>-->
 </div>
 {% endblock %}
 

@@ -1,8 +1,14 @@
 from flask import Flask, request, render_template, url_for, redirect
+# from pygments import highlight
+# from pygments.lexers import PythonLexer
+# from pygments.formatters import HtmlFormatter
 import subprocess
 
 app = Flask(__name__)
 app.app_context().push()
+
+# sourcecode = 'print "Hello world Example" '
+# print(highlight(sourcecode, PythonLexer(), HtmlFormatter()))
 
 
 @app.route('/')
